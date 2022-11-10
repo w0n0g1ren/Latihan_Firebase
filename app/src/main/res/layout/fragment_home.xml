@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@color/teal_700"
+    android:layout_gravity="center"
+    tools:context=".fragment.HomeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/Nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Nama"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/Umur"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Umur"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/teal_700"
+                android:text="ADD" />
+
+            <Button
+                android:id="@+id/button_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/teal_700"
+                android:text="SHOW" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
