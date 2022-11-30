@@ -69,7 +69,7 @@ class RegisterActivity : AppCompatActivity() {
                 val intent = Intent(this,LoginActivity::class.java)
                 startActivity(intent)
             }else{
-                Toast.makeText(this,"${it.exception?.message}",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"register gagal",Toast.LENGTH_SHORT).show()
             }
         }
     }
