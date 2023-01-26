@@ -66,7 +66,7 @@ class LoginActivity : AppCompatActivity() {
                onStop()
 
            }else{
-               Toast.makeText(this,"${it.exception?.message}",Toast.LENGTH_SHORT).show()
+               Toast.makeText(this,"email anda tidak terdaftar",Toast.LENGTH_SHORT).show()
            }
        }
     }
