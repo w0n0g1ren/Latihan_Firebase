@@ -26,6 +26,11 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.forgotPassword.setOnClickListener {
+            val intent = Intent (this,ResetPasswordActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.btnLogin.setOnClickListener {
             val email = binding.edtEmailLogin.text.toString()
             val password = binding.edtPasswordLogin.text.toString()
@@ -58,6 +63,8 @@ class LoginActivity : AppCompatActivity() {
                Toast.makeText(this,"Selamat Datang $email",Toast.LENGTH_SHORT).show()
                val intent = Intent(this,MainActivity::class.java)
                startActivity(intent)
+               onStop()
+
            }else{
                Toast.makeText(this,"${it.exception?.message}",Toast.LENGTH_SHORT).show()
            }

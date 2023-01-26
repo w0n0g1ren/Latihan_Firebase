@@ -56,7 +56,7 @@ class HomeFragment : Fragment() {
 
             val db = database.push().key!!
             val user = User(nama,umur)
-            database.child(db).setValue(user)
+            database.child(nama).setValue(user)
                 .addOnCompleteListener {
                     Toast.makeText(context,"success", Toast.LENGTH_SHORT).show()
                     Binding.Nama.text.clear()
